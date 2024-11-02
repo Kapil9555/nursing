@@ -16,7 +16,7 @@ const HeaderDrawer = ({handleScrollComp}) => {
       <Grid item xs={11.5} sx={{height:"100%"}}>
         <Grid container alignItems={'center'} justifyContent={'space-between'} sx={{height:"100%"}}>
             <Grid item xs={3} sm={4} md={2} lg={2} sx={{display:"flex",height:"100%",alignItems:"center",justifyContent:{xs:"center",sm:"center",md:"left",lg:"left"}}} onClick={()=>{router.push('/')}}>
-               <Box sx={{height:{lg:"60px",md:"60px",sm:"50px",xs:"40px"},width:{lg:"100px",md:"100px",sm:"80px",xs:"60px"},position:"relative"}}>
+               <Box sx={{height:{lg:"60px",md:"60px",sm:"50px",xs:"50px"},width:{lg:"100px",md:"100px",sm:"85px",xs:"85px"},position:"relative"}}>
                   <Image src={logo} alt='logo'  style={{position:"",height:"100%",width:"100%",cursor:'pointer',borderRadius:'20px'}} />
                </Box>
             </Grid>
