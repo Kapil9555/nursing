@@ -39,50 +39,80 @@ const Contact = () => {
                                             </Grid>
                                 </Grid>
 
-                                <Grid container sx={{ mt:'20px', display:'flex', justifyContent:'space-between', alignItems:'center', bgcolor:'black', borderRadius:'10px'}} >
-                            
-                               
-                                        <Grid item xs={12} sm={12} md={5.6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px 8px',  borderRadius:'10px'}} >
-                                            <Box sx={{height:'180px',display:'flex',justifyContent:'center',alignItems:'center', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
-                                                <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                                                <MailOutlineIcon sx={{ color: "white", fontSize: "50px" }} />
-                                                <Typography align='center' sx={{ fontSize: "18px", color: 'white' }}>Email</Typography>
-                                                    <Typography align='center' sx={{ fontSize: "18px",wordBreak:'break-word', fontWeight: "800", color: 'white' }}>rohitsharma078674@gmail.com</Typography>
-                                                </Box>
-                                            </Box>
-                                        </Grid>
+                            <Grid container sx={{ mt: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', bgcolor: 'black', borderRadius: '10px' }}>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={5.6}
+                                    lg={2.8}
+                                    sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', userSelect: 'none', cursor: 'pointer', m: '5px 8px', borderRadius: '10px' }}
+                                    onClick={() => window.open('mailto:rohitsharma078674@gmail.com')}
+                                >
+                                    <Box sx={{ height: '180px', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
+                                        <Box sx={{ p: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                                            <MailOutlineIcon sx={{ color: 'white', fontSize: '50px' }} />
+                                            <Typography align='center' sx={{ fontSize: '18px', color: 'white' }}>Email</Typography>
+                                            <Typography align='center' sx={{ fontSize: '18px', wordBreak: 'break-word', fontWeight: '800', color: 'white' }}>rohitsharma078674@gmail.com</Typography>
+                                        </Box>
+                                    </Box>
+                                </Grid>
 
-                                        <Grid item xs={12} sm={12} md={5.6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px 8px',  borderRadius:'10px'}} >
-                                            <Box sx={{height:'180px',display:'flex',justifyContent:'center',alignItems:'center', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
-                                                <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                                                    <CallIcon sx={{ color: "white", fontSize: "50px" }} />
-                                                    <Typography align='center' sx={{ fontSize: "18px", color: 'white' }}>Contact no.</Typography>
-                                                    <Typography align='center' sx={{ fontSize: "18px", fontWeight: "800", color: 'white' }}>7065832449</Typography>
-                                                </Box>
-                                            </Box>
-                                        </Grid>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={5.6}
+                                    lg={2.8}
+                                    sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', userSelect: 'none', cursor: 'pointer', m: '5px 8px', borderRadius: '10px' }}
+                                    onClick={() => window.open('tel:7065832449')}
+                                >
+                                    <Box sx={{ height: '180px', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
+                                        <Box sx={{ p: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                                            <CallIcon sx={{ color: 'white', fontSize: '50px' }} />
+                                            <Typography align='center' sx={{ fontSize: '18px', color: 'white' }}>Contact no.</Typography>
+                                            <Typography align='center' sx={{ fontSize: '18px', fontWeight: '800', color: 'white' }}>7065832449</Typography>
+                                        </Box>
+                                    </Box>
+                                </Grid>
 
-                                        <Grid item xs={12} sm={12} md={5.6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px 8px',  borderRadius:'10px'}} >
-                                            <Box sx={{height:'180px',display:'flex',justifyContent:'center',alignItems:'center', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
-                                                <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                                                <InstagramIcon sx={{ color: "white", fontSize: "50px" }} />
-                                                    <Typography align='center' sx={{ fontSize: "18px", color: 'white' }}>Instagram</Typography>
-                                                    <Typography align='center' sx={{ fontSize: "18px", fontWeight: "800", color: 'white' }}>@maa_nursing_services</Typography>
-                                                </Box>
-                                            </Box>
-                                        </Grid>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={5.6}
+                                    lg={2.8}
+                                    sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', userSelect: 'none', cursor: 'pointer', m: '5px 8px', borderRadius: '10px' }}
+                                    onClick={() => window.open('https://instagram.com/maa_nursing_services', '_blank')}
+                                >
+                                    <Box sx={{ height: '180px', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
+                                        <Box sx={{ p: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                                            <InstagramIcon sx={{ color: 'white', fontSize: '50px' }} />
+                                            <Typography align='center' sx={{ fontSize: '18px', color: 'white' }}>Instagram</Typography>
+                                            <Typography align='center' sx={{ fontSize: '18px', fontWeight: '800', color: 'white' }}>@maa_nursing_services</Typography>
+                                        </Box>
+                                    </Box>
+                                </Grid>
 
-                                        <Grid item xs={12} sm={12} md={5.6} lg={2.8} sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)',m:'5px 8px',  borderRadius:'10px'}} >
-                                            <Box sx={{height:'180px',display:'flex',justifyContent:'center',alignItems:'center', bgcolor:'black',borderRadius:'10px', border:'1px solid #0277bd'}}>
-                                                <Box sx={{ p: "20px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-                                                <FacebookIcon sx={{ color: "white", fontSize: "50px" }} />
-                                                <Typography align='center' sx={{ fontSize: "18px", color: 'white' }}>Facebook</Typography>
-                                                    <Typography align='center' sx={{ fontSize: "18px", fontWeight: "800", color: 'white' }}>@maa_nursing_services</Typography>
-                                                </Box>
-                                            </Box>
-                                        </Grid>
-                    
-                        </Grid>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={5.6}
+                                    lg={2.8}
+                                    sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', userSelect: 'none', cursor: 'pointer', m: '5px 8px', borderRadius: '10px' }}
+                                    onClick={() => window.open('https://facebook.com/maa_nursing_services', '_blank')}
+                                >
+                                    <Box sx={{ height: '180px', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
+                                        <Box sx={{ p: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                                            <FacebookIcon sx={{ color: 'white', fontSize: '50px' }} />
+                                            <Typography align='center' sx={{ fontSize: '18px', color: 'white' }}>Facebook</Typography>
+                                            <Typography align='center' sx={{ fontSize: '18px', fontWeight: '800', color: 'white' }}>@maa_nursing_services</Typography>
+                                        </Box>
+                                    </Box>
+                                </Grid>
+                            </Grid>
+
                             </Grid>
                         </Grid>
                     </Grid>
