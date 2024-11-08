@@ -1,5 +1,5 @@
 'use client'
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import food5 from "@/assests/card.jpg";
 import CallIcon from '@mui/icons-material/Call';
@@ -7,9 +7,24 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { useRouter } from 'next/navigation';
+import { useDispatch, useSelector } from 'react-redux';
+import { addData } from '@/redux/features/testSlice';
 
 const Contact = () => {
     const router = useRouter()
+    const data = useSelector(state => state.arr)
+    const dispatch = useDispatch()
+
+    console.log("state data check",data)
+
+
+    const handleAdd =()=>{
+        dispatch(addData({name:'rohit',age:24}))
+    }
+
+    const handleRemove =()=>{
+        dispatch(addData('rohit'))
+    }
 
 
 
@@ -112,6 +127,15 @@ const Contact = () => {
                                     </Box>
                                 </Grid>
                             </Grid>
+
+                            {/* <Grid item xs={12}>
+                                <Button onClick={handleAdd}>Add</Button>
+                                <Button  onClick={handleRemove}>Remove</Button>
+                            </Grid>
+
+                            <Grid item xs={12}>
+                                
+                            </Grid> */}
 
                             </Grid>
                         </Grid>
