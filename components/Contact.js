@@ -83,7 +83,7 @@ const Contact = () => {
                                     md={5.6}
                                     lg={2.8}
                                     sx={{ boxShadow: '1px 1px 5px 0px rgba(65,100,240,1)', userSelect: 'none', cursor: 'pointer', m: '5px 8px', borderRadius: '10px' }}
-                                    onClick={() => window.open('https://instagram.com/maa_nursing_services', '_blank')}
+                                    onClick={() => window.open('https://instagram.com/injection_at_home', '_blank')}
                                 >
                                     <Box sx={{ height: '180px', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'black', borderRadius: '10px', border: '1px solid #0277bd' }}>
                                         <Box sx={{ p: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
